@@ -13,6 +13,12 @@
 - How to encrypt a password and check the validity of an input password
 - How to authenticate to a database using environment variables
 
+### Required module:
+- mysql-connector-python 
+``` 
+pip3 install mysql-connector-python
+```
+
 # Tasks
 ## 0. Regex-ing
 Write a function called `filter_datum` that returns the log message obfuscated:
