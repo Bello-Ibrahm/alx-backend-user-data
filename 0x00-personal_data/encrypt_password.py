@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""  """
+"""A module that defines a hash_password function
+to return a hashed password and checks hashed_password
+validity
+"""
 import bcrypt
 
 
@@ -23,6 +26,6 @@ def is_valid(hashed_password: bytes, password: str) -> bool:
         password (str): password in string
 
     Return:
-        bool    
+        bool
     '''
     return bcrypt.checkpw(password.encode('utf-8'), hashed_password)
