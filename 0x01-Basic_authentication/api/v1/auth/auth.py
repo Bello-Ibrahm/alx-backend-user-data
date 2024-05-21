@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """ Authentication Module"""
-
 from flask import request
 from typing import List, TypeVar
 
@@ -8,8 +7,6 @@ from typing import List, TypeVar
 class Auth:
     ''' API Auth class
     '''
-
-
     def require_auth(
             self,
             path: str,
