@@ -44,7 +44,7 @@ class DB:
             new_user = None
 
         return new_user
-    
+
     def find_user_by(self, **kwargs) -> User:
         '''
         '''
@@ -56,7 +56,7 @@ class DB:
                 if getattr(usr, k) == v:
                     return usr
         raise NoResultFound
-        
+
     def update_user(self, user_id: int, **kwargs) -> None:
         '''
         '''
