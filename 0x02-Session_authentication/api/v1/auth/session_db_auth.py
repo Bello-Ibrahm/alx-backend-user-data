@@ -13,7 +13,7 @@ class SessionDBAuth(SessionExpAuth):
         '''
         '''
         session_id = super().create_session(user_id)
-        if isinstance(session_id, str):
+        if type(session_id) is str:
             kwargs = {
                 'user_id': user_id,
                 'session_id': session_id,
