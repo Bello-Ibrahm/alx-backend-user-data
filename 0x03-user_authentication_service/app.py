@@ -4,7 +4,8 @@ from flask import (
     Flask,
     jsonify,
     request,
-    abort
+    abort,
+    redirect
 )
 from auth import Auth
 
